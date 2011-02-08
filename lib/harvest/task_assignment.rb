@@ -10,7 +10,7 @@ module Harvest
     element :deactivated, Boolean
     element :hourly_rate, Float, :tag => 'hourly-rate'
     element :budget, Float
-    element :estimate, Float
+    # element :estimate, Float #FIXME: make update of budget fail
     
     def task=(task)
       @task_id = task.to_i
